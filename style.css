@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: #ffffff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+}
+
+.container {
+
+    width: 500px;
+
+    background: white;
+
+    padding: 60px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 30px rgba(128, 128, 128, 0.5);
+}
+
+h1 {
+
+    text-align: center;
+
+    color: black;
+
+    margin-bottom: 40px;
+
+    font-size: 48px;
+
+    font-weight: 600;
+}
+
+label {
+
+    color: black;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+}
+
+input {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d4b3ef;
+
+    color: black;
+
+    font-size: 17px;
+
+    margin-top: 5px;
+}
+
+input:focus {
+
+    outline: none;
+
+    border: 2px solid #d4b3ef;
+}
+
+button {
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d4b3ef;
+
+    color: black;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+
+    background: #d4b3ef;
+
+    transform: translateY(-2px);
+}
+
+#message {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: black;
+
+    font-size: 16px;
+}
