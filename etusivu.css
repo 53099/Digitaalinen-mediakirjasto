@@ -72,10 +72,13 @@
  .main-content {
      flex: 1;
      padding: 20px 40px;
-     background: linear-gradient( to bottom, #d7b6f5 0px 175px, /* top */
-     #ffffff 175px 100%/* rest */
+     /* TOP  RIGHT/BOTTOM  LEFT */
+     background: linear-gradient(to bottom, #d7b6f5 175px, /* top */
+     #ffffff 20px calc(100% - 20px), /* middle */
+     #ffffff calc(100% - 20px) 100%/* bottom */
      );
      border-right: 40px solid #ffffff;
+     /* right side color */
      min-height: 100vh;
  }
  /* SEARCH */
