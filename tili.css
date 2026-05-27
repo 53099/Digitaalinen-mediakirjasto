@@ -2,18 +2,29 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;   /* horizontal centering */
+    align-items: center;
+    /* horizontal centering */
+    justify-content: center;
+    /* vertical centering */
+    min-height: 100vh;
+    /* full viewport height */
 }
 
 .container {
-    text-align: center;    /* centers text inside */
+    text-align: center;
+    /* centers text inside */
     margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    align-items: center;   /* centers menu items */
+    align-items: center;
+    /* centers menu items */
     gap: 10px;
 }
 
