@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal centering */
+}
+
+.container {
+    text-align: center;    /* centers text inside */
+    margin-top: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers menu items */
+    gap: 10px;
+}
+
+.menu-item {
+    margin: 0;
+}
