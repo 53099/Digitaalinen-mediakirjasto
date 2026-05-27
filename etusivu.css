@@ -77,7 +77,8 @@
      #ffffff 20px calc(100% - 20px), /* middle */
      #ffffff calc(100% - 20px) 100%/* bottom */
      );
-     border-right: 40px solid #ffffff;
+     /* draw a white right accent only below the purple top area using a pseudo-element */
+     position: relative;
      /* right side color */
      min-height: 100vh;
  }
@@ -142,4 +143,18 @@
      color: #d0d0d0;
      font-size: 42px;
      font-weight: 600;
+ }
+ /* White right stripe that starts below the purple header (175px) so header appears full-width */
+ 
+ .main-content::after {
+     content: "";
+     position: absolute;
+     top: 175px;
+     /* matches the purple top band height in the gradient */
+     right: 0;
+     width: 40px;
+     /* same visual width as the previous border-right */
+     bottom: 0;
+     background: #ffffff;
+     pointer-events: none;
  }
