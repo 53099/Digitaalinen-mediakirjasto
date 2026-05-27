@@ -2,21 +2,14 @@
 <html lang="fi">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <title>Mediakirjasto</title>
+    <title>Rekisteröidy</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="style.css">
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -25,32 +18,29 @@
 
         <h1>Rekisteröidy</h1>
 
-        <label>Sähköpostiosoite:</label>
+        <label>Sähköposti</label>
 
         <input
             type="email"
             id="email"
-            placeholder="Anna sähköposti..">
+            placeholder="Anna sähköposti">
 
-        <label>Salasana:</label>
+        <label>Salasana</label>
 
         <input
             type="password"
             id="password"
-            placeholder="Anna salasana..">
+            placeholder="Anna salasana">
 
-
-
-        <a href="Rekisteri.html"><button onclick="register()">
+        <button onclick="register()">
             Luo tili
         </button>
-        </a>
 
         <p id="message"></p>
 
     </div>
 
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
