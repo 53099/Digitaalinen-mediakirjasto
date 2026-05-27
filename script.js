@@ -100,3 +100,9 @@ function register() {
 
     }, 1000);
 }
+
+function logout() {
+
+    window.location.href =
+        "index.html";
+}
