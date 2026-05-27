@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleSidebar();
     });
 
+    // Prevent plus button from closing sidebar
+    const plusButton = document.querySelector('.plus-button');
+    if (plusButton) {
+        plusButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+
     // clicking the main content hides the sidebar when it's visible (mobile-like behavior)
     main.addEventListener('click', function() {
         if (!sidebar.classList.contains('sidebar--hidden')) {
